@@ -1,0 +1,2 @@
+Place the YOLO model file you downloaded
+https://github.com/ultralytics/ultralytics/releases
