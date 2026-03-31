@@ -50,9 +50,6 @@ def get_model_instance(num_classes_arg, load_imagenet_weights_if_tv):
 
 
 class GradCAM:
-    """
-    Grad-CAM 主类.
-    """
 
     def __init__(self, model, target_layer):
         self.model = model
@@ -96,9 +93,6 @@ class GradCAM:
 
 
 def show_cam_on_image(img_pil, mask, colormap=cv2.COLORMAP_JET):
-    """
-    将CAM热力图叠加到原始图像上.
-    """
     img_cv = np.array(img_pil)
     img_cv = cv2.cvtColor(img_cv, cv2.COLOR_RGB2BGR)
     heatmap = cv2.applyColorMap(np.uint8(255 * mask), colormap)
