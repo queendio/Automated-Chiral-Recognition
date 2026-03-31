@@ -26,10 +26,14 @@ PhyChiral/
 ├── data/                 # Dataset descriptions and sample images
 ├── models/               # Pre-trained weights (.pt / .pth)
 ├── src/                  # Core source code
-│   ├── augmentation/     # Stable Diffusion-based generation
 │   ├── classification/   # EfficientNet-B2 training & eval
 │   ├── detection/        # YOLO detection & FOV synthesis
 │   └── interpretability/ # Grad-CAM implementation
 ├── scripts/              # Command-line interface for inference
 ├── environment.yml       # Conda environment file
 └── README.md             # Project documentation
+
+The full dataset, including raw SEM/OM images and characterization data (XRD/CD), is available at [Insert Zenodo/Figshare Link/DOI].
+
+For questions regarding the code or paper, please contact:
+Shixin Xiong: queendioda@gmail.com
