@@ -1,1 +1,32 @@
+# --- PyTorch official binaries for CUDA 12.6 ---
+--extra-index-url https://download.pytorch.org/whl/cu126
 
+# Core Deep Learning Frameworks
+torch==2.6.0+cu126
+torchvision==0.21.0+cu126
+torchaudio==2.6.0+cu126
+
+# Object Detection (YOLO)
+ultralytics
+
+# Generative AI & Data Augmentation (Stable Diffusion)
+diffusers
+transformers
+accelerate
+
+# Explainable AI (Grad-CAM)
+grad-cam
+ttach
+
+# Scientific Computing & Data Processing
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+tqdm
+PyYAML
+
+# Image Processing
+opencv-python
+Pillow
