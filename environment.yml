@@ -1,1 +1,36 @@
-
+name: phychiral
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.9
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - opencv
+  - tqdm
+  - pip:
+      # 核心深度学习框架 (针对 CUDA 12.6)
+      --extra-index-url https://download.pytorch.org/whl/cu126
+      torch==2.6.0+cu126
+      torchvision==0.21.0+cu126
+      torchaudio==2.6.0+cu126
+      
+      # 目标检测 (YOLO)
+      ultralytics
+      
+      # 数据增强 (Stable Diffusion / Diffusers)
+      diffusers
+      transformers
+      accelerate
+      
+      # 可解释性分析 (Grad-CAM)
+      ttach
+      grad-cam
+      
+      # 其他辅助库
+      pillow
+      pyyaml
